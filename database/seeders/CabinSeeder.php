@@ -11,14 +11,14 @@ class CabinSeeder extends Seeder
     {
         DB::table('cabins')->insert([
             [
-                'hospital_id' => 1,
                 'type' => 'General',
-                'price' => 1000
+                'price' => 1500,
+                'hospital_id' => 1,
             ],
             [
+                'type' => 'AC Deluxe',
+                'price' => 3000,
                 'hospital_id' => 2,
-                'type' => 'VIP',
-                'price' => 3000
             ],
         ]);
     }
